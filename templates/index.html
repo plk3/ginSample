@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>ユーザー認証</h1>
+
+        <!-- ユーザー登録フォーム -->
+        <div class="form-container">
+            <h2>ユーザー登録</h2>
+            <form id="register-form">
+                <input type="text" id="register-username" placeholder="ユーザー名" required>
+                <input type="password" id="register-password" placeholder="パスワード" required>
+                <button type="submit">登録</button>
+            </form>
+        </div>
+
+        <!-- ログインフォーム -->
+        <div class="form-container">
+            <h2>ログイン</h2>
+            <form id="login-form">
+                <input type="text" id="login-username" placeholder="ユーザー名" required>
+                <input type="password" id="login-password" placeholder="パスワード" required>
+                <button type="submit">ログイン</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
