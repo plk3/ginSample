@@ -41,7 +41,6 @@ type RegisterInput struct {
 // @Failure      500            {object}  map[string]string
 // @Router       /auth/register [post]
 func Register(c *gin.Context) {
-
 	var input RegisterInput
 	if err := c.ShouldBindJSON(&input); err != nil {
 		c.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})

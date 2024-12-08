@@ -42,10 +42,10 @@ document.getElementById('login-form').addEventListener('submit', function (event
     })
         .then(response => response.json())
         .then(data => {
-            if (data.message) {
+            if (data.token) {
                 alert('ログイン成功!');
             } else {
-                alert('ログインに失敗しました:' + data);
+                alert('ログインに失敗しました');
             }
         });
 });
