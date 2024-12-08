@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ダッシュボード</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="dashboard-container">
+        <!-- サイドバー -->
+        <aside class="sidebar">
+            <div class="logo">
+                <h2>MySite</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">ダッシュボード</a></li>
+                    <li><a href="#">設定</a></li>
+                    <li><a href="#">プロフィール</a></li>
+                    <li><a href="#">通知</a></li>
+                    <li><a href="#">ログアウト</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- メインコンテンツ -->
+        <main class="content">
+            <header class="header">
+                <h1>ようこそ、[ユーザー名]さん</h1>
+                <button class="logout-btn">ログアウト</button>
+            </header>
+
+            <!-- 概要エリア -->
+            <section class="overview">
+                <div class="data-card">
+                    <h3>最近のアクティビティ</h3>
+                    <p>データの概要や最新アクションの情報</p>
+                </div>
+                <div class="data-card">
+                    <h3>売上統計</h3>
+                    <p>この月の売上状況に関する詳細</p>
+                </div>
+                <div class="data-card">
+                    <h3>エラー通知</h3>
+                    <p>最新のシステムエラー通知が表示されます</p>
+                </div>
+            </section>
+
+            <!-- グラフエリア -->
+            <section class="charts">
+                <div class="chart">
+                    <h3>月別売上グラフ</h3>
+                    <!-- グラフ表示部分（ライブラリ使用可能） -->
+                </div>
+                <div class="chart">
+                    <h3>ユーザーアクティビティ</h3>
+                    <!-- グラフ表示部分（ライブラリ使用可能） -->
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
